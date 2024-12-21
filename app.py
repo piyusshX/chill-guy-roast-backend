@@ -36,6 +36,7 @@ def save_data():
             "isValid" : True
         }
         return data
-
-if __name__ == "__main__":
-    app.run(debug=True)
+        
+@app.route("/")
+def home():
+    return "Server is running"
