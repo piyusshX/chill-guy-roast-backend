@@ -3,7 +3,7 @@ from linkedin_api import Linkedin
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}}) 
+CORS(app) 
 
 api = Linkedin("oahyp@freesourcecodes.com", "Password@903")
 
