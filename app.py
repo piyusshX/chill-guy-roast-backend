@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app) 
 
-api = Linkedin("oahyp@freesourcecodes.com", "Password@903")
+api = Linkedin("VITE_EMAIL", "VITE_PASSWORD")
 
 @app.route("/save", methods=["POST"])
 def save_data():
